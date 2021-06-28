@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 1em;
+    height: 2em;
+    box-shadow: 0 0 3px black;
+    /*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(175, 37, 141);
+}
+
+a {
+    color: inherit;
+}
+
+
+/* dimensiunea logo imagine */
+
+.logo img {
+    width: 2em;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header_icon_logo {
+    display: none;
+}
+
+header ul li {
+    /*width: calwc(16.6% - 2px); 6 butoane butoane doctor/cabinet*/
+    width: calc(20% - 2px);
+    /* 5 butoane butoane pacient*/
+    float: left;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgb(41, 107, 21) ; */
+    margin-right: 2px;
+}
+
+header ul li a {
+    display: block;
+    user-select: none;
+}
+
+header ul li a:hover {
+    background-color: rgb(175, 37, 141);
+    color: rgb(20, 54, 28);
+    transition: .5s ease;
+    border-radius: 1em;
+}
+
+header ul li ul li {
+    display: none;
+    width: 100%;
+}
+
+header ul li:hover ul li {
+    display: block;
+    background-color: rgb(175, 37, 141);
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 10%;
+    padding-top: 8.5rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.home .image {
+    flex: 1 1 39rem;
+}
+
+.home .image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.home .content {
+    flex: 1 1 39rem;
+}
+
+.home .content h3 {
+    color: #333;
+    font-size: 6rem;
+}
+
+.container {
+    min-width: 100vh;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #eae7e7;
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form>* {
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 7px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #c78ebb;
+    line-height: 2;
+}
+
+form textarea {
+    padding: 7px 0 40px 5px;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+ ::placeholder {
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--color-sec);
+    color: #c78ebb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: rgb(247, 239, 239);
+}
+
+form button:hover {
+    background-color: #73526c;
+}
+
+.recipe-result {
+    margin-top: 2.4rem 0;
+}
+
+#recipes {
+    margin: 2.4rem 0;
+}
+
+.recipe {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.80);
+    margin: 2rem 0;
+    width: 500px;
+    display: inline;
+}
+
+.recipe-name {
+    padding: 1.5rem 0.5rem;
+}
+
+.recipe-name h3 {
+    font-size: 1.4rem;
+}
+
+.recipe-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #c78ebb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: inlne;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    transition: all 0.4s linear;
+}
+
+.recipe-btn:hover {
+    background: #73526c;
+}
+
+.recipe-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: #c78ebb;
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    padding: 2rem 0;
+}
+
+.recipe-details::-webkit-scrollbar {
+    width: 10px;
+}
+
+.recipe-details::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 2rem;
+}
+
+.showRecipe {
+    display: block;
+}
+
+.recipe-details-content {
+    margin: 2rem;
+}
+
+.recipe-details-content p:not(.recipe-category) {
+    padding: 1rem 0;
+}
+
+.recipe-close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.recipe-title {
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.recipe-category {
+    background: white;
+    font-weight: 600;
+    color: #c78ebb;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.recipe-instruct {
+    padding: 1rem 0;
+}
+
+.recipe-details-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.recipe-link {
+    margin: 1.4rem 0;
+}
+
+.recipe-link a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.4s linear;
+}
+
+.recipe-link a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width:768px) {
+    #recipes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .recipe {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:990px) {
+    #recipes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width :600px) {
+    .header_text {
+        display: none;
+    }
+}
+
+@media (max-width :300px) {
+    .header_icon_logo {
+        display: inline;
+    }
+    .logo img {
+        display: none;
+    }
+}

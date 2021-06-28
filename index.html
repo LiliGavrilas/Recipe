@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a class="logo" href="./main.html">
+
+                    <span class="header_icon_logo"> <i class="fas fa-clinic-medical"></i> </span>
+                    <img class="logo" src="logo.jpg" alt="logo">
+
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="main.html">
+                    <span class="header_text">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="index.html">
+                    <span class="header_text">Add Recipe</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a class="header_button" href="search.html">
+                    <span class="header_text">Search</span>
+                </a>
+            </li>
+
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1>Recipe</h1>
+            <form action="">
+
+                <input type="text" id="recipe-title" placeholder="Name ">
+                <textarea id="recipe-text" placeholder="Ingredients "></textarea>
+
+                <button type="submit" class="add-btn" id="add-btn">Add Recipe</button>
+
+            </form>
+
+            <div class="recipe-result">
+                <h2 class="title">Recipes added:</h2>
+                <div id="recipes">
+                    <div class="recipe">
+                        <h3 class="recipe-title"> $element.title </h3>
+                        <p class="recipe-text"> $element.text</p>
+                        <button class="recipe-btn">Delete Recipe</button>
+                        <button class="recipe-btn edit-btn">Edit recipe</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js "></script>
+</body>
+
+</html>

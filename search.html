@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find recipes by key ingredients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a class="logo" href="./main.html">
+
+                    <span class="header_icon_logo"> <i class="fas fa-clinic-medical"></i> </span>
+                    <img class="logo" src="logo.jpg" alt="logo">
+
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="main.html">
+                    <span class="header_text">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="index.html">
+                    <span class="header_text">Add Recipe</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a class="header_button" href="search.html">
+                    <span class="header_text">Search</span>
+                </a>
+            </li>
+
+        </ul>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="search">
+                <h2 class="title">Find recipes by key ingredients</h2>
+                <div class="search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+                </div>
+            </div>
+
+            <div class="result">
+                <h2 class="title">Your Search Results:</h2>
+                <div id="recipe">
+                    <!-- recipe item -->
+                    <!-- <div class = "recipe-item">
+            <div class = "recipe-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "recipe-name">
+              <h3>Grilled Chicken Salad Sandwich</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+                    <!-- end of recipe item -->
+                </div>
+            </div>
+
+
+            <div class="recipe-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+                <!-- recipe content -->
+                <div class="recipe-details-content">
+                    <!-- <h2 class = "recipe-title">Recipes Name </h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Whisk together 1 cup of mayonnaise, pepper, garlic powder, and celery salt until combined. Combine the chicken, celery, cranberries, and cashews in a large bowl. Pour the mayonnaise mixture over the chicken mixture and stir until evenly combined.</p>
+          </div>
+          <div class = "recipe-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
